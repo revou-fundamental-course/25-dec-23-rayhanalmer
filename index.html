@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="calculator">
+    <h2>Katik</h2>
+    <h3>Kalkulator Matematik Segitiga</h3>
+    
+
+    <img src="assets/triangle.png" alt="Triangle" width="400">
+    
+    <h3>Area Calculator</h3>
+
+    <label for="base">Base:</label>
+    <input type="number" id="base" placeholder="Enter base" required>
+
+    <label for="height">Height:</label>
+    <input type="number" id="height" placeholder="Enter height" required>
+
+    <button onclick="calculate()">Calculate Area</button>
+
+    <div class="results">
+        <h4>Results</h4>
+        <p id="areaResult">Area: </p>
+    </div>
+
+    <h3>Perimeter Calculator</h3>
+
+    <div class="sideInputs">
+        <label for="sideA">Side a:</label>
+        <input type="number" id="sideA" placeholder="Enter side a">
+
+        <label for="sideB">Side b:</label>
+        <input type="number" id="sideB" placeholder="Enter side b">
+
+        <label for="sideC">Side c:</label>
+        <input type="number" id="sideC" placeholder="Enter side c">
+        
+        <button onclick="calculatePerimeter()">Calculate Perimeter</button>
+    </div>
+
+    <div class="results2">
+        <h4>Results</h4>
+        <p id="perimeterResult">Perimeter: </p> <!-- New Result Line -->
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
